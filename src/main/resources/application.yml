@@ -96,9 +96,9 @@ management:     # If you set off security...
 
 #Infra Admin Settings (current version not used)
 #project:
-#  name: paasta-gate-way
-#  artifactId: paasta-gate-way
-#  description: paasta-gate-way management service
+#  name: ap-gate-way
+#  artifactId: ap-gate-way
+#  description: ap-gate-way management service
 #info:
 #  app:
 #    encoding: Encoding - UTF-8

@@ -1,4 +1,4 @@
-package org.openpaas.paasta.gateway;
+package org.openpaas.gateway;
 
 
 import org.springframework.boot.SpringApplication;

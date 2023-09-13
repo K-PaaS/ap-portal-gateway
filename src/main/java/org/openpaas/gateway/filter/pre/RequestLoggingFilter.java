@@ -1,12 +1,11 @@
-package org.openpaas.paasta.gateway.filter.pre;
-
-import static org.openpaas.paasta.gateway.filter.FilterType.*;
+package org.openpaas.gateway.filter.pre;
 
 import java.util.Optional;
 
+import org.openpaas.gateway.filter.FilterType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.openpaas.paasta.gateway.filter.FilterOrder.*;
+import org.openpaas.gateway.filter.FilterOrder.*;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
@@ -26,7 +25,7 @@ public class RequestLoggingFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return PRE;
+        return FilterType.PRE;
     }
     
     @Override
