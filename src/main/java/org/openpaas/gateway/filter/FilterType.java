@@ -1,4 +1,4 @@
-package org.openpaas.paasta.gateway.filter;
+package org.openpaas.gateway.filter;
 
 public interface FilterType {
 	final String PRE = "pre";

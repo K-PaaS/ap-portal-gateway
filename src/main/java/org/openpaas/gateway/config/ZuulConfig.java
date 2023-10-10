@@ -1,4 +1,4 @@
-package org.openpaas.paasta.gateway.config;
+package org.openpaas.gateway.config;
 
 import org.springframework.context.annotation.Configuration;
 

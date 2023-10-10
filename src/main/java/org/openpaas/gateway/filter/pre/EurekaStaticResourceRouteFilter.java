@@ -1,14 +1,14 @@
-package org.openpaas.paasta.gateway.filter.pre;
+package org.openpaas.gateway.filter.pre;
 
 
+import org.openpaas.gateway.filter.FilterType;
 import org.springframework.beans.factory.annotation.Value;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import org.openpaas.paasta.gateway.filter.FilterOrder.*;
-import org.openpaas.paasta.gateway.filter.FilterType;
+import org.openpaas.gateway.filter.FilterOrder.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,13 +25,13 @@ import com.netflix.zuul.context.RequestContext;
 public class EurekaStaticResourceRouteFilter extends ZuulFilter {
     private static final Logger logger = LoggerFactory.getLogger( EurekaStaticResourceRouteFilter.class ); 
     
-    @Value("${paasta.zuul.eureka-static.redirect-starts-with.filters:/eureka/css/,/eureka/js/,/eureka/fonts/,/eureka/images/}")
+    @Value("${ap.zuul.eureka-static.redirect-starts-with.filters:/eureka/css/,/eureka/js/,/eureka/fonts/,/eureka/images/}")
     private String[] filters;
     
-    @Value("${paasta.zuul.eureka-static.redirect-starts-with.route-path:/eureka}")
+    @Value("${ap.zuul.eureka-static.redirect-starts-with.route-path:/eureka}")
     private String routePath;
     
-    @Value("${paasta.zuul.eureka-static.redirect-starts-with.additional-prefix:/eureka}")
+    @Value("${ap.zuul.eureka-static.redirect-starts-with.additional-prefix:/eureka}")
     private String toAdditionalPrefix;
     
     @Override
